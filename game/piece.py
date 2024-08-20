@@ -4,7 +4,8 @@ class Piece:
 
 
 class Rook(Piece):
-    ...
+    def __init__(self):
+        ...
     
 class Pawn(Piece):
     ...
