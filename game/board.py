@@ -20,3 +20,16 @@ class Board:
 
     def get_piece(self, row, col):
         return self.__positions__[row][col]
+    
+    def display_board(self):
+        for row in self.__positions__:
+            for piece in row:
+                if piece is None:
+                    print('.', end=' ')
+                else:
+                    if piece.color == "BLACK":
+                        print('B', end=' ')
+                    else:
+                        print('W', end=' ')
+            print()  # Nueva línea después de cada fila
+

@@ -4,6 +4,9 @@ class Chess:
     def __init__(self):
         self.__board__ = Board()
         self.__turn__ = "WHITE"
+    
+    def is_playing(self):
+        return True
 
     def move(
         self,
@@ -14,7 +17,6 @@ class Chess:
     ):
         # validate coords
         piece = self.__board__.get_piece(from_row, from_col)
-        
         self.change_turn()
     @property
 
@@ -26,3 +28,5 @@ class Chess:
             self.__turn__ = "BLACK"
         else:
             self.__turn__ = "WHITE"
+    
+    
