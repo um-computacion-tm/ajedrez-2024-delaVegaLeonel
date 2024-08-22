@@ -1,8 +1,17 @@
 from chess import Chess
+#aca se atrapan las exepciones
+def InvalidMoveNoPiece(exception):
+    ...
+
+def InvalidMoveRookMove(exception):
+    ...
+
+def InvalidMove(exception):
+    ...
 
 def main():
     chess = Chess()
-    while True:
+    while chess.is_playing():
         play(chess)
 
 def play(chess):
@@ -19,6 +28,9 @@ def play(chess):
            to_row,
            to_col,  
         )
+
+    except InvalidMove as e:
+        print("Su movimiento fue invalido")
 
     except Exception as e:
         print("error", e)
