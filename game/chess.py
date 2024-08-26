@@ -19,9 +19,11 @@ class Chess:
         piece = self.__board__.get_piece(from_row, from_col)
         self.change_turn()
     @property
-
     def turn(self):
         return self.__turn__
+    
+    def show_board(self):
+        return str(self.__board__)
 
     def change_turn(self):
         if self.__turn__ == "WHITE":
