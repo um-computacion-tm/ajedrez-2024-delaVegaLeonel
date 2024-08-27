@@ -18,6 +18,5 @@ class Bishop(Piece):
 
 class Queen(Piece):
     ...
-
 class King(Piece):
     ...

@@ -11,12 +11,13 @@ class Chess:
     def move(
         self,
         from_row,
-        from_col,
+        from_col, 
         to_row,
         to_col,
     ):
         # validate coords
         piece = self.__board__.get_piece(from_row, from_col)
+        piece = self.__board__.get_piece(to_row, to_col)
         self.change_turn()
     @property
     def turn(self):
