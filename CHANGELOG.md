@@ -16,4 +16,8 @@
 
 ## [1.0.6] - 2024-08-26  "Added" -  a la torre le di sus movimientos y su ficha. ademas de empeze con test de torre.
 
+## [1.0.7] - 2024-08-27  "Added" - termine con rook.
+
+
+
 
