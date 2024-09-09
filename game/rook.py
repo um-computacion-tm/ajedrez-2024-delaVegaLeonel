@@ -1,4 +1,5 @@
 from game.piece import Piece
+from game.chess import Chess
 
 class Rook(Piece):
     def __str__(self):
@@ -6,7 +7,10 @@ class Rook(Piece):
             return "♜"
         else:
             return "♖"
-        
+     
+    
+
+
     def get_move_Rook(self, board, from_row, from_col): 
         movimientos = []
         direcciones = ions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
